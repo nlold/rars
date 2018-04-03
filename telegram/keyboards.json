@@ -1,0 +1,20 @@
+{
+  "keyboard_start": {
+    "keyboard": [
+      [
+        {"text": "Начать"},
+        {"text": "Позже"}
+      ]
+    ],
+    "one_time_keyboard": true
+  },
+  "keyboard_answer": {
+    "keyboard": [
+      [
+        {"text": "Да"},
+        {"text": "Нет"}
+      ]
+    ],
+    "one_time_keyboard": true
+  }
+}
