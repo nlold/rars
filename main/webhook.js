@@ -33,14 +33,14 @@ router.post('/', async (req, res, next) => {
 
     if(command === 'Начать' && userInfo.curEvent === 'start') {
 
-      await sendMessage(ID, 'Для получения результата отвечайте на вопросы');
+      await sendMessage(ID, 'Для получения результата отвечайте на вопросы. Содержится ли в вашем продукте следующая информация:');
       nextQuestion = interview(userInfo);
       
     } else if(command === 'Позже' && userInfo.curEvent === 'start') {
   
       await sendMessage(ID, 'Как только захотите пройти, напишите /start');
     
-    } else {
+    } else if(command === 'Да' || command === 'Нет') {
 
       nextQuestion = await interview(userInfo, command);
 

@@ -30,7 +30,7 @@ async function interview(userInfo, command = 'start') {
 
         if(!newEvent) {
           await updateState(userInfo.chatID, {chatID: userInfo.chatID, curEvent: 'end', curQuestion: 0});
-          await sendMessage(userInfo.chatID, 'Какой вы ожидаете результат при таких ответах? Можете собраться с мыслями и попробовать заново.');
+          await sendMessage(userInfo.chatID, 'Какой вы ожидаете результат при таких ответах? Соберитесь с мыслями и попробуйте заново.');
           return true;
         } 
 
